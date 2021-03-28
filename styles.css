@@ -9,7 +9,7 @@ body {
 }
 
 .top-container {
-    background-image: url('Media/top-container-left.svg'), url("media/top-container-right.svg"), linear-gradient(rgba(42, 94, 232, 1) 39%, rgba(110, 148, 254, 1) 100%);
+    background-image: url('Media/top-container-left.svg'), url("Media/top-container-right.svg"), linear-gradient(rgba(42, 94, 232, 1) 39%, rgba(110, 148, 254, 1) 100%);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: bottom left -330px, bottom right -330px;
     display: flex;
@@ -164,6 +164,10 @@ header .hamburger {
     line-height: 32px;
     width: 100%;
     color: rgb(100, 100, 100);
+}
+
+.container2-mobile {
+    display: none;
 }
 
 .bottom-container {
@@ -361,36 +365,41 @@ footer .footer-nav h5 {
     .top-container>.center-box>.nav-buttons button {
         display: none;
     }
-    .container {
-        padding: 56px 24px;
-        display: block;
-    }
-    .container>img {
-        margin-top: 20px;
-        width: 100%;
-    }
-    .container>.description {
-        padding: 0;
-        margin-top: 20px;
-        width: 100%;
-    }
-    .container>.description>h2 {
-        margin-top: 20px;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 120%;
-    }
-    .container>.description>p {
-        padding: 0;
-        margin-top: 24px;
-        font-size: 20px;
-        line-height: 32px;
-    }
     .container2 {
         display: none;
     }
     .container2-mobile {
         display: block;
+    }
+    .container,
+    .container2-mobile {
+        padding: 56px 24px;
+        display: block;
+    }
+    .container>img,
+    .container2-mobile>img {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .container>.description,
+    .container2-mobile>.description {
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .container>.description>h2,
+    .container2-mobile>.description>h2 {
+        margin-top: 20px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    .container>.description>p,
+    .container2-mobile>.description>p {
+        padding: 0;
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 32px;
     }
     .bottom-container {
         margin: 0;
