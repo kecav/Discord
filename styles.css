@@ -319,7 +319,7 @@ footer .footer-nav h5 {
 
 /* ---------------------------------------- Responsive Part --------------------------------------*/
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:980px) {
     * {
         margin: 0;
         padding: 0;
